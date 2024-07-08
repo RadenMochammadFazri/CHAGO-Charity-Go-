@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DonasiPage2">
+   <top>
+      <AnchorPane prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: FF7F3E;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="133.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icon/Salinan%20dari%201.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="161.0" layoutY="13.0" prefHeight="25.0" prefWidth="158.0">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Donasi" />
+                        <MenuItem mnemonicParsing="false" text="Events" />
+                        <MenuItem mnemonicParsing="false" text="Wakaf" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TextField>
+            <Button fx:id="btnHome1" layoutX="329.0" layoutY="13.0" mnemonicParsing="false" onAction="#Homepg" style="-fx-background-color: FF7F3E;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <MenuButton layoutX="449.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: FF7F3E;" text="Layanan kami " textFill="WHITE">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Donasipg" text="Donasi" />
+                  <MenuItem fx:id="Wakafpg" mnemonicParsing="false" onAction="#Wakafpg" text="Wakaf" />
+                  <MenuItem fx:id="Eventspg" mnemonicParsing="false" onAction="#Eventspg" text="Events" />
+                  <MenuItem fx:id="DonasiBarangpg" mnemonicParsing="false" onAction="#DonasiBarangpg" text="Pilihan Donasi" />
+               </items>
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </MenuButton>
+            <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="553.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icon/user%20(5).png" />
+               </image>
+            </ImageView>
+            <Text fill="#0000003e" layoutX="184.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cari" />
+            <ImageView fitHeight="16.0" fitWidth="19.0" layoutX="168.0" layoutY="18.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icon/search.png" />
+               </image>
+            </ImageView>
+            <MenuButton layoutX="380.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: FF7F3E;" text="Tentang" textFill="WHITE">
+               <items>
+                  <MenuItem fx:id="AboutUspg" mnemonicParsing="false" onAction="#AboutUs" text="Tentang Kami" />
+               </items>
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </MenuButton>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.4000000059604645" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="1011.0" prefWidth="589.0" style="-fx-background-color: white;">
+               <children>
+                  <AnchorPane layoutX="343.0" layoutY="28.0" prefHeight="263.0" prefWidth="226.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <AnchorPane layoutX="8.0" layoutY="150.0" prefHeight="58.0" prefWidth="211.0" style="-fx-background-color: white;">
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color opacity="0.10000000149011612" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Text fill="#ff7f3ec9" layoutX="9.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp. 30.450.111" wrappingWidth="79.26382446289062">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#00000099" layoutX="10.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terkumpul  70 %">
+                                 <font>
+                                    <Font size="7.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#00000099" layoutX="164.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sisa 60 hari">
+                                 <font>
+                                    <Font size="7.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#00000099" layoutX="159.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.040 Donatur">
+                                 <font>
+                                    <Font size="7.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="7.0" fitWidth="7.0" layoutX="150.0" layoutY="18.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icon/user%20(6).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="8.0" layoutY="51.0" prefHeight="84.0" prefWidth="207.0" style="-fx-background-color: white;">
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color opacity="0.10000000149011612" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <Text fill="#000000ab" layoutX="9.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masukkan Nominal :">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#000000b5" layoutX="112.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min Donasi Rp. 10.000">
+                                 <font>
+                                    <Font size="8.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <TextField editable="false" layoutX="18.0" layoutY="82.0" prefHeight="28.0" prefWidth="192.0" style="-fx-border-color: FF7F3E; -fx-background-color: white;">
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color opacity="0.10000000149011612" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </TextField>
+                        <Text fill="#000000c9" layoutX="15.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donasi Kebutuhan ABK">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Line endX="94.4444580078125" layoutX="113.0" layoutY="43.0" startX="-98.00003051757812" stroke="#00000034" />
+                        <Text fill="#0000004c" layoutX="25.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnKonfirmasi" layoutX="27.0" layoutY="223.0" mnemonicParsing="false" onAction="#btnKonfirmasi" prefHeight="25.0" prefWidth="174.0" style="-fx-background-color: FF7F3E;" text="Donasi sekarang" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Line endX="100.33331298828125" endY="4.57763671875E-5" layoutX="103.0" layoutY="180.0" startX="-80.66668701171875" startY="6.103515625E-5" stroke="#00000026" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeWidth="4.0" />
+                        <Line endX="78.55560302734375" endY="1.52587890625E-5" layoutX="103.0" layoutY="180.0" startX="-82.66668701171875" startY="3.0517578125E-5" stroke="#ff7f3e" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeWidth="4.0" />
+                     </children>
+                  </AnchorPane>
+                  <SplitPane dividerPositions="0.48125755743651755" layoutX="14.0" layoutY="319.0" prefHeight="160.0" prefWidth="554.0" style="-fx-border-color: white;">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <PieChart layoutY="-2.0" prefHeight="161.0" prefWidth="260.0" style="-fx-background-color: white;" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: FF7F3E;">
+                           <children>
+                              <Text fill="#000000b3" layoutX="122.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detail">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="73.0" endY="1.52587890625E-5" layoutX="154.0" layoutY="40.0" startX="-96.33332824707031" stroke="#00000034" />
+                              <Text layoutX="101.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Layanan : Sedekah">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="97.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date : 20 juni 2024">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="18.0" fitWidth="22.0" layoutX="70.0" layoutY="65.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icon/customer.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="71.0" layoutY="103.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icon/calendar.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <ImageView fitHeight="45.0" fitWidth="292.0" layoutX="29.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="248.0" layoutX="22.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icon/action%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="195.0" layoutX="361.0" layoutY="533.0" startX="-100.0" stroke="#00000030" />
+                  <AnchorPane layoutX="22.0" layoutY="574.0" prefHeight="167.0" prefWidth="537.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.10000000149011612" />
+                           </color></DropShadow>
+                     </effect>
+                     <children>
+                        <Text layoutX="28.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Membantu yang Membutuhkan">
+                           <font>
+                              <Font size="13.0" />
+                           </font></Text>
+                        <Text layoutX="28.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Meningkatkan Kesejahteraan Sosial">
+                           <font>
+                              <Font size="13.0" />
+                           </font></Text>
+                        <Text layoutX="28.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Memupuk Rasa Empati">
+                           <font>
+                              <Font size="13.0" />
+                           </font></Text>
+                        <Text layoutX="28.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Mengurangi Beban Pajak">
+                           <font>
+                              <Font size="13.0" />
+                           </font></Text>
+                        <Text layoutX="29.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Mendukung Tujuan Mulia">
+                           <font>
+                              <Font size="13.0" />
+                           </font></Text>
+                        <Text layoutX="30.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Meningkatkan Kesehatan Mental">
+                           <font>
+                              <Font size="13.0" />
+                           </font></Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="804.0" prefHeight="225.0" prefWidth="594.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.6000000238418579" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="116.0" layoutX="32.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/Salinan%20dari%201%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#595959" layoutX="43.0" layoutY="78.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHAGO ( Charity GO ) adalah aplikasi berbagi kebaikan dengan orang lain terutama anak ABK  dan melakukan kegiatan baik lainya secara efektif dan efisien." wrappingWidth="166.97857666015625">
+                           <font>
+                              <Font name="Calibri" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#ff7f3e" layoutX="268.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Layanan Kami" textAlignment="CENTER" wrappingWidth="96.31192016601562">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#626262" layoutX="294.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donasi" wrappingWidth="44.978668212890625">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#626262" layoutX="295.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Events" wrappingWidth="32.089752197265625">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#626262" layoutX="296.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wakaf" wrappingWidth="29.867584228515625">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#626262" layoutX="278.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donasi Barang" wrappingWidth="96.97866821289062">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#ff7f3e" layoutX="435.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tentang Kami" textAlignment="CENTER" wrappingWidth="96.31192016601562">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="8.0" fitWidth="10.0" layoutX="437.0" layoutY="68.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/call.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="11.0" fitWidth="13.0" layoutX="435.0" layoutY="87.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/email.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="12.0" layoutX="436.0" layoutY="109.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/maps-and-flags.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#626262" layoutX="453.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chago@gmail.com" wrappingWidth="96.97866821289062">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#626262" layoutX="453.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="081121232024" wrappingWidth="72.31198120117188">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#626262" layoutX="453.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yogyakarta, Jakal Km.35" wrappingWidth="126.31204223632812">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#ff7f3e" layoutX="441.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ikuti Kami" textAlignment="CENTER" wrappingWidth="96.31192016601562">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="457.0" layoutY="171.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/instagram.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="484.0" layoutY="171.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/twitter.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="505.0" layoutY="170.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/facebook-app-symbol.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="12.0" layoutX="42.0" layoutY="160.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/copyright.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#616161c7" layoutX="56.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chago.com" wrappingWidth="68.97868347167969">
+                           <font>
+                              <Font name="Arial" size="8.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="358.33331298828125" endY="-9.5367431640625E-6" layoutX="205.0" layoutY="14.0" startX="-61.22222900390625" startY="-1.33514404296875E-5" stroke="#0000001a" />
+                  <AnchorPane layoutX="18.0" layoutY="37.0" prefHeight="157.0" prefWidth="314.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="171.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/ini-aturan-bersikap-pada-anak-berkebutuhan-khusus-yang-penting-kamu-ketahui.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#000000c9" layoutX="26.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donasi Kebutuhan ABK" textAlignment="CENTER" wrappingWidth="297.86737060546875">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="BtnPM" layoutX="23.0" layoutY="247.0" mnemonicParsing="false" onAction="#BtnPM" prefHeight="35.0" prefWidth="310.0" style="-fx-background-color: FF7F3E;" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="36.0" fitWidth="33.0" layoutX="93.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icon/hand-shake.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="137.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donasi Sebagai Mitra">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="BtnHPW1" layoutX="12.0" layoutY="4.0" mnemonicParsing="false" onAction="#BtnHPW1" prefHeight="17.0" prefWidth="24.0" style="-fx-background-color: white;" textFill="#00000099">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="9.0" fitWidth="10.0" layoutX="15.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icon/home.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#656060" layoutX="29.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;" wrappingWidth="10.708984375">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#ff7f3e" layoutX="74.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pemilihan Donasi">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#77706d" layoutX="38.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donasi &gt; ">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
